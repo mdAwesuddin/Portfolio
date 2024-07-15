@@ -155,8 +155,8 @@ button:focus {
 }
 
 .logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+  height: 4em !important;
+  width: 4em !important;
 }
 
 .navbar-nav .nav-link {
@@ -740,4 +740,57 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+
+.login-btn-section{
+ margin-right: 5.5rem;
+ margin-left: 6.5rem;
+}
+
+.resource-section {
+  position: relative;
+  padding-bottom: 30px !important;
+  padding-top: 6rem !important;
+}
+
+.resource-content {
+  padding: 5rem 0 2rem !important;
+  color: whitesmoke;
+}
+
+.resource-heading {
+  font-size: 2.2em !important;
+  /* padding-left: 10px !important; */
+  color: white;
+  margin: 0px;
+  white-space: nowrap; /* Ensures the name is on a single line */
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  text-align: left;
+ }
+@media (max-width: 767px) {
+  .resource-section {
+    position: relative;
+    padding-bottom: 30px !important;
+    padding-top: 6rem !important;
+  }
+  .login-btn-section{
+    margin-right: 1rem;
+    margin-left: 1rem;
+   }
+   .resource-heading{
+    font-size: 1.0em !important;
+   }
+   .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   .Typewriter{
+    display: none;
+   }
 }
