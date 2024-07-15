@@ -52,7 +52,6 @@ const Resources = () => {
   }, [token]);
 
   const handleLoginSuccess = (response) => {
-    console.log("Login Success:", response);
     setToken(response.access_token);
     localStorage.setItem("Token", response.access_token);
     setLoginToast(true);
@@ -128,7 +127,7 @@ const Resources = () => {
               imgPath={javascript}
               isBlog={false}
               title="Ultimate Guide for JavaScript"
-              description="This Pack Provides you all the neccessary concepts to learn JavaScript and it's Frameworks."
+              description="This Pack Provides you all the neccessary concepts to learn JavaScript and Frameworks."
               //   ghLink="https://github.com/soumyajit4419/Chatify"
               downloadlink="https://drive.google.com/drive/folders/1wPEDV2WOH7mtJfsbyALzOED_8fbfaM7Y?usp=sharing"
             />

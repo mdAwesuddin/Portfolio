@@ -11,9 +11,9 @@ function AboutCard() {
             Hi Everyone, I am <span className="purple">Awesuddin Mohammed </span>
             from <span className="purple"> India.</span>
             <br />
-            I am currently employed as a software engineer at Edvenswa Tech.
+            I am currently employed as Software Engineer at Edvenswa Tech.
             <br />
-            I have completed B-Tech in Computer Science at SBIT Khammam Telangana
+            I have completed B-Tech in Computer Science at SBIT Khammam, Telangana,
             India.
             <br />
             <br />
