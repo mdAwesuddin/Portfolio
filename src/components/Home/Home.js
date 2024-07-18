@@ -1,11 +1,35 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import { getCalApi } from "@calcom/embed-react";
 
 function Home() {
+
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi();
+      cal("floatingButton", {
+        calLink: "mohammed-awesuddin/15min",
+        config: {
+          name: "Jhon",
+          email: "jhon@example.com",
+          "metadata[employeeId]": "101"
+        },
+        buttonColor:"#918ea1",
+        buttonTextColor:"#000000",
+        buttonText:"Schedule a Meet",
+      });
+      cal("ui", {
+        styles: {
+          branding: { brandColor: "#000000" }
+        }
+      });
+    })();
+  }, []);
+  
   return (
     <section>
       <Container fluid className="home-section" id="home">
