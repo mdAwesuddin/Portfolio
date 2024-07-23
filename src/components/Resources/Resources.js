@@ -27,7 +27,7 @@ const Resources = () => {
     console.log(token);
     setToken(token);
     setShowToast(true);
-    const timer = setTimeout(() => setShowToast(false), 3000);
+    const timer = setTimeout(() => setShowToast(false), 4000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -170,7 +170,7 @@ const Resources = () => {
               imgPath={git}
               isBlog={false}
               title="GIT in one Go!"
-              description="GIT is very essential in managing any project you will learn all the basics of Git commands and their use."
+              description="GIT is very essential in managing any project you will learn step by step all the commands from the basics and their uses in project realtime development."
               //   ghLink="https://github.com/soumyajit4419/Chatify"
               downloadlink="https://drive.google.com/drive/folders/1YLQRcPfgPosA90JsyPTPXDeoKwIQt8B9?usp=sharing"
             />

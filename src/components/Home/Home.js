@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
@@ -7,10 +7,10 @@ import Type from "./Type";
 import { getCalApi } from "@calcom/embed-react";
 
 function Home() {
-
   useEffect(() => {
+    let cal;
     (async function () {
-      const cal = await getCalApi();
+      cal = await getCalApi();
       cal("floatingButton", {
         calLink: "mohammed-awesuddin/15min",
         config: {
@@ -28,6 +28,16 @@ function Home() {
         }
       });
     })();
+
+    return () => {
+      const button = document.querySelector('cal-floating-button');
+      if (button) {
+        button.remove();
+      }
+      if (cal) {
+        cal("destroy");
+      }
+    };
   }, []);
   
   return (
