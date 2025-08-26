@@ -14,9 +14,12 @@ import {
   SiTailwindcss,
   SiRedux,
   SiBootstrap,
-  SiShadcnui
+  SiShadcnui,
+  SiElectron,
+  SiPostgresql,
+  SiJest 
 } from "react-icons/si";
-import { FaAws, FaWordpressSimple } from "react-icons/fa";
+import { FaAws } from "react-icons/fa";
 
 function Techstack() {
   return (
@@ -30,6 +33,9 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiReact />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiElectron />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiMongodb />
@@ -55,11 +61,14 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <SiShadcnui />
       </Col>
+       <Col xs={4} md={2} className="tech-icons">
+        <SiJest />
+      </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiRedux />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <FaWordpressSimple />
+        <SiPostgresql />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJava />
