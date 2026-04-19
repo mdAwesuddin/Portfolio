@@ -1,18 +1,20 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import {
-  SiVisualstudiocode,
   SiPostman,
   SiVite,
   SiJira,
   SiEclipseide,
   SiWoocommerce,
-  SiAppwrite,
   SiXcode,
   SiMacos,
-  SiDocker 
+  SiDocker,
+  SiGithubcopilot  
 } from "react-icons/si";
+import { BsClaude } from "react-icons/bs";
+import { BiLogoVisualStudio } from "react-icons/bi";
 import { FaWindows, FaLinux } from "react-icons/fa";
+import { VscAzureDevops } from "react-icons/vsc";
 
 function Toolstack() {
   return (
@@ -27,7 +29,7 @@ function Toolstack() {
         <SiMacos />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
+        <BiLogoVisualStudio />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiXcode />
@@ -39,16 +41,22 @@ function Toolstack() {
         <SiEclipseide />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
+        <SiGithubcopilot />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <BsClaude />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
         <SiDocker />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <VscAzureDevops />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiJira />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiVite />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiAppwrite />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiWoocommerce />

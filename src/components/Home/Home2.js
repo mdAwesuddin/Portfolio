@@ -4,6 +4,7 @@ import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
+  AiFillInstagram 
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineX } from "react-icons/ai";
@@ -28,7 +29,7 @@ function Home2() {
               <br />
               My field of Interest's are building new&nbsp;
               <i>
-                <b className="purple">Web Technologies and Products </b> and
+                <b className="purple">Web Technologies, Products and Artificial Intelligence </b> and
                 also in areas related to{" "}
                 <b className="purple">
                   Cloud Computing.
@@ -81,6 +82,16 @@ function Home2() {
                   className="icon-colour  home-social-icons"
                 >
                   <AiOutlineX />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://www.instagram.com/awesuddin_mohammed"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <AiFillInstagram />
                 </a>
               </li>
               <li className="social-icons">

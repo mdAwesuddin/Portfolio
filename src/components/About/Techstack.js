@@ -15,11 +15,11 @@ import {
   SiRedux,
   SiBootstrap,
   SiShadcnui,
-  SiElectron,
   SiPostgresql,
+  SiFastapi ,
   SiJest 
 } from "react-icons/si";
-import { FaAws } from "react-icons/fa";
+import { FaAws, FaPython  } from "react-icons/fa";
 
 function Techstack() {
   return (
@@ -35,10 +35,13 @@ function Techstack() {
         <DiReact />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiElectron />
+        <FaPython />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiMongodb />
+      </Col>
+       <Col xs={4} md={2} className="tech-icons">
+        <SiFastapi />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiMysql />
@@ -69,9 +72,6 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPostgresql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
       </Col>
     </Row>
   );
